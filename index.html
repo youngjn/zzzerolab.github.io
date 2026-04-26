@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero June — Support</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --muted: #666;
+      --border: #e5e5e5;
+      --accent: #0071e3;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 48px 0 32px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 6px;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+
+    section p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* App Card */
+    .app-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s;
+    }
+
+    .app-card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .app-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .app-info span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-item h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .faq-item p {
+      font-size: 14px;
+    }
+
+    /* Contact */
+    .contact-link {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      header {
+        padding: 36px 0 24px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      section {
+        padding: 32px 0;
+      }
+
+      section h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Zero June</h1>
+      <p>App Support</p>
+    </header>
+
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+
+    <!-- Apps -->
+    <section id="apps">
+      <h2>Our Apps</h2>
+      <a class="app-card" href="https://apps.apple.com/app/luck-o/id6761208614" target="_blank" rel="noopener">
+        <div class="app-icon"><img src="assets/luck-o-icon.png" alt="Luck-O icon"></div>
+        <div class="app-info">
+          <h3>Luck-O</h3>
+          <span>Random number generator for lottery picks &amp; more</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>Is Luck-O free to use?</h3>
+        <p>Yes. Luck-O is completely free with no in-app purchases or subscriptions.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I win real money with Luck-O?</h3>
+        <p>No. Luck-O is for entertainment purposes only. It does not sell lottery tickets or involve real-money gambling of any kind.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is Luck-O affiliated with any official lottery?</h3>
+        <p>No. Luck-O is an independent app and is not affiliated with, endorsed by, or associated with any official lottery organization.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does Luck-O collect my personal data?</h3>
+        <p>No. We do not collect any personal data. Your privacy is fully respected.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What devices are supported?</h3>
+        <p>Luck-O is available on iPhone and requires iOS 26.0 or later.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>The app is crashing or not working properly.</h3>
+        <p>Please make sure you are running the latest version from the App Store. If the issue persists, contact us using the email below and include your device model and iOS version.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Have a question, bug report, or feature request? We'd love to hear from you.</p>
+      <a class="contact-link" href="mailto:zero.june@outlook.com">zero.june@outlook.com</a>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>Zero June apps are designed with your privacy in mind. We do not directly collect, store, or share any personal information.</p>
+      <p>Our apps do not require account creation and do not transmit any personal data from your device to our servers.</p>
+
+      <h3 style="font-size:15px; font-weight:600; margin:16px 0 6px;">Third-Party Advertising</h3>
+      <p>Our apps may display advertisements provided by third-party ad networks (such as Google AdMob). These services may collect and use certain data — including device identifiers, IP address, and general usage information — to serve relevant ads. This data collection is governed by the respective privacy policies of those third-party providers.</p>
+      <p>For more information, please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">Google's Privacy Policy</a>.</p>
+
+      <h3 style="font-size:15px; font-weight:600; margin:16px 0 6px;">Your Choices</h3>
+      <p>You can limit ad tracking on your device through your iOS settings under <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>. You may also reset your advertising identifier at any time.</p>
+
+      <p>If you have any questions about our privacy practices, please reach out via the contact email above.</p>
+      <p><em>Last updated: April 2026</em></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Zero June. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
